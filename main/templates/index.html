@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <link rel="icon" href="{% static "img/logo.svg" %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+</head>
+<body>
+    {% include "homepage/header.html" %}
+    
+    {% if nav == 0%}
+        {% include "homepage/nav.html" %}
+    {% endif %}
+    
+
+
+    {% include "homepage/footer.html" %}
+</body>
+</html>
